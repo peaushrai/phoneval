@@ -75,7 +75,8 @@ const Otp = () => {
       }
 
       try {
-        await confirmationResult?.confirm(otp);
+        const result= await confirmationResult?.confirm(otp);
+        console.log("result",result)
         router.replace("/");
       } catch (error) {
         console.log(error);
