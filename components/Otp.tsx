@@ -87,7 +87,7 @@ const Otp = () => {
 
   const handleSubmit = async (e?: FormEvent<HTMLFormElement>) => {
     e?.preventDefault();
-    // setResendCodeTimer(60);
+    setResendCodeTimer(60);
     alert("hereeeeeeeee!!!!!!")
     startTransition(async () => {
       setError("");
